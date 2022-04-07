@@ -2,7 +2,7 @@ import React from "react";
 import alunos from "../../data/alunos";
 
 export default (props) => {
-  const alunosLi = alunos.map((aluno) => {
+  const alunosLi = alunos.map((aluno, i) => {
     return (
       <li key={aluno.id}>
         {aluno.id}) {aluno.nome} {">>"} {aluno.nota}
