@@ -3,6 +3,7 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import Aleatorio from "./components/basicos/Aleatorio";
@@ -17,12 +18,15 @@ export default () => (
 
     <div className="Cards">
 
+        <Card titulo="#06 - Repetição" color="  #2471a3  ">
+            <ListaAlunos></ListaAlunos>
+        </Card>
+
         <Card titulo="#05 - Comp. com filhos" color="#FF4500">
             <Familia sobrenome="Silva">
                 <FamiliaMembro nome="Pedro " />
                 <FamiliaMembro nome="José"  />
                 <FamiliaMembro nome="Maria"  />
-
             </Familia>
         </Card>
 
@@ -38,7 +42,7 @@ export default () => (
             <ComParametro titulo="Situação do estudante" aluno="Carlos" nota={8} />
         </Card>
 
-        <Card titulo="#01 - Fragmento">
+        <Card titulo="#01 - Primeiro comp">
             <Primeiro></Primeiro>
         </Card>
         
