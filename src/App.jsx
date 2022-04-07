@@ -3,6 +3,7 @@ import React from "react";
 
 import Card from "./components/layout/Card";
 
+import Produto from './components/repeticao/Produto'
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
@@ -12,11 +13,16 @@ import ComParametro from "./components/basicos/ComParametro";
 import Primeiro from "./components/basicos/Primeiro";
 
 
+
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+
+        <Card titulo="#07 - Desafio Repetição" color="#0b5345">
+            <Produto />
+        </Card>
 
         <Card titulo="#06 - Repetição" color="  #2471a3  ">
             <ListaAlunos></ListaAlunos>
