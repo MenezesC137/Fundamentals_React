@@ -2,21 +2,28 @@ import "./App.css"
 import React from "react";
 
 import Card from "./components/layout/Card";
-import Primeiro from "./components/basicos/Primeiro";
-import ComParametro from "./components/basicos/ComParametro";
-import Fragmento from "./components/basicos/Fragmento";
-import Aleatorio from "./components/basicos/Aleatorio";
+
 import Familia from "./components/basicos/Familia";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import Aleatorio from "./components/basicos/Aleatorio";
+import Fragmento from "./components/basicos/Fragmento";
+import ComParametro from "./components/basicos/ComParametro";
+import Primeiro from "./components/basicos/Primeiro";
 
 
-export default (_) => (
+export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
 
         <Card titulo="#05 - Comp. com filhos" color="#FF4500">
-            <Familia sobrenome="Ferreira"/>
+            <Familia sobrenome="Silva">
+                <FamiliaMembro nome="Pedro " />
+                <FamiliaMembro nome="José"  />
+                <FamiliaMembro nome="Maria"  />
+
+            </Familia>
         </Card>
 
         <Card titulo="#04 - Desafio aleatorio" color="#080">
