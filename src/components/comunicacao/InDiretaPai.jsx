@@ -10,7 +10,6 @@ export default (props) => {
     setNome(nome);
     setIdade(idade);
     setNerd(nerd);
-
   }
   return (
     <div>
