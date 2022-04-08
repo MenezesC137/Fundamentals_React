@@ -26,7 +26,7 @@ export default () => (
     <div className="Cards">
 
         <Card titulo="#13 - Desafio Mega-Sena" color="">
-            <Mega />
+            <Mega qtde={8}/>
         </Card>
 
         <Card titulo="#12 - Contador" color="#8300ff">
